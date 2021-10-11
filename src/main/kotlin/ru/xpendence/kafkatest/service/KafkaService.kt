@@ -19,7 +19,7 @@ class KafkaService(
     }
 
     @KafkaListener(id = "kafkaTest", topics = ["kafkaTest"])
-    fun listenGroupFoo(message: String) {
+    fun listen(message: String) {
         println("--> $message")
     }
 }
